@@ -2,9 +2,9 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const { interface, bytecode } = require('./compile');
 
-const provider = new HDWalletProvider(
+const provider = new HDWalletProvider( // HDWalletProvider module connects to a target network and unlock a account by giving a neumonic code below
     'gadget target scan planet uncover right extend picture spare lady silver veteran', 
-    'https://rinkeby.infura.io/Er9icAgAewb6EZTCdbXM'
+    'https://rinkeby.infura.io/Er9icAgAewb6EZTCdbXM' // infura connects to node to the eth network
 );
 
 const web3 = new Web3(provider);

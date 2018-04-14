@@ -1,9 +1,9 @@
 const assert = require('assert'); 
 const ganache = require('ganache-cli'); // local ethereum test network
-const Web3 = require('web3'); // Web3 is a constructor function therefore its capitalized
+const Web3 = require('web3'); // web3 is our portel to ethereum world. Web3 is a constructor function therefore its capitalized
 const provider = ganache.provider();
-const web3 = new Web3(provider); //create instance of Web3 and connect to ganache
-const { interface, bytecode } = require('../compile');
+const web3 = new Web3(provider); // web3 must alway get a provider to know what network it is getting connected to. Provider creates instance of Web3 and connect to ganache
+const { interface, bytecode } = require('../compile'); // interface is our ABI or our translater
 
 let accounts;
 let inbox;
